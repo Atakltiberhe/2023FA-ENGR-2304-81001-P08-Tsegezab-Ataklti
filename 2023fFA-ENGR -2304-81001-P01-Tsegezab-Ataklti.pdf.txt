@@ -1,5 +1,5 @@
 Programming Assignment
-  Hello world!
+  Hello America !
 
 
 1 #include < stdio.h >
@@ -7,8 +7,8 @@ Programming Assignment
 3 Int main ( ){
 4 //Program: Well, come message to the console
 5 //Description: This program displays a well come message to the console.
-6 Print f (ìHello, World! \nî);
-7 Print f (Welcome to ENGR 2304 -programing for Engineers at Dallas college \nî);
+6 Print f (‚ÄúHello, World! \n‚Äù);
+7 Print f (Welcome to ENGR 2304 -programing for Engineers at Dallas college \n‚Äù);
 8 Return 0;
 9 }
 
