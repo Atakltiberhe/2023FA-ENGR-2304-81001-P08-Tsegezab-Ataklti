@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <math.h>
+
+double generate_random_value(double max) {
+    return ((double)rand() / RAND_MAX) * max;
+}
+
+void calculate_solution(double Vs, double R1, double R2, double R3, double* I1, double* I2, double* I3, double* Vout) {
+    *I1 = Vs / R1;
+    *I2 = Vs / R2;
+    *I3 = Vs / R3;
+    *Vout = (*I1) * R2;
+}
+
+int main() {
+    srand(time(0));
+double Vs = 4.620, R1 = 19.668, R2 = 16.694, R3 = 8.640;
+    double I1, I2, I3, Vout;
+
+    printf("Randomly generated values:\n");
+    printf("Vs: %.3f, R1: %.3f, R2: %.3f, R3: %.3f\n", Vs, R1, R2, R3);
+
+    calculate_solution(Vs, R1, R2, R3, &I1, &I2, &I3, &Vout);
+
+    printf("Calculated values:\n");
+    printf("I1: %.3f, I2: %.3f, I3: %.3f, Vout: %.3f\n", I1, I2, I3, Vout);
+
+    return 0;
+}

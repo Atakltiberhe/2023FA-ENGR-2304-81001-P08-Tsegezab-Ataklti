@@ -1,0 +1,14 @@
+Programming Assignment
+  Hello world!
+
+
+1 #include < stdio.h >
+2 
+3 Int main ( ){
+4 //Program: Well, come message to the console
+5 //Description: This program displays a well come message to the console.
+6 Print f (“Hello, World! \n”);
+7 Print f (Welcome to ENGR 2304 -programing for Engineers at Dallas college \n”);
+8 Return 0;
+9 }
+
